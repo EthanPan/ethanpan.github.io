@@ -1,3 +1,55 @@
+title:            Site Title
+description:      Site description for the metas.
+logo:             site-logo.png
+disqus_shortname: shortname
+#Comment out url when working locally to resolve base urls correctly
+url:              
+
+# Owner/author information
+owner:
+  name:           Your Name
+  avatar:         your-photo.jpg
+  email:          your@email.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:
+  facebook:
+  github:
+  linkedin:
+  instagram:
+  tumblr:
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    "http://plus.google.com/123123123123132123"
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about
+  - title: Articles
+    url: /articles
+  - title: Google
+    url: http://google.com
+    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+pygments:    true
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+
+
 name: Your New Jekyll Site
 markdown: redcarpet
-pygments: true
+pygments: true          
+safe: true
+lsi: false      
+
