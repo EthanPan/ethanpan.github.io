@@ -45,9 +45,7 @@ markdown:    kramdown
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
 
-image:
-  feature: so-simple-sample-image-2.jpg
-  thumb: thumbnail-image.jpg #keep it square 200x200 px is good
+
 
 name: Your New Jekyll Site
 markdown: redcarpet
