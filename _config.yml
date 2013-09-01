@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Site description for the metas.
+title:            PANP
+description:      Pan's blog
 logo:             site-logo.png
 disqus_shortname: shortname
 #Comment out url when working locally to resolve base urls correctly
@@ -7,9 +7,9 @@ url:
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           ethansure
   avatar:         your-photo.jpg
-  email:          your@email.com
+  email:          ethan.jianxu@email.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   facebook:
@@ -18,7 +18,7 @@ owner:
   instagram:
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    "http://plus.google.com/123123123123132123"
+  google_plus:    
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
