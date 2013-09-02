@@ -37,7 +37,7 @@ links:
   - title: archives
     url: /archives   
   - title: Tags  
-    url: /tags
+    url: /tags.html
   - title: weibo
     url: http://weibo.com/surep
     external: true
