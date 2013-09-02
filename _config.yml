@@ -1,14 +1,14 @@
-title:            PANP
+title:            
 description:      Pan's blog
 logo:             site-logo.png
-disqus_shortname: shortname
+disqus_shortname: 
 #Comment out url when working locally to resolve base urls correctly
-url:              
+url:              http://ethanpan.github.io
 
 # Owner/author information
 owner:
   name:           ethansure
-  avatar:         your-photo.jpg
+  avatar:         my-photo.jpg
   email:          ethan.jianxu@email.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:
@@ -31,14 +31,14 @@ bing_verify:
 links:
   - title: About
     url: /about
-  - title: Articles
-    url: /articles
-  - title: Google
-    url: http://google.com
+  - title: archives
+    url: /archives
+  - title: weibo
+    url: http://weibo.com/surep
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Shanghai
 pygments:    true
 markdown:    kramdown
 
