@@ -1,15 +1,16 @@
-title:            Site Title
-description:      Site description for the metas.
-logo:             site-logo.png
-disqus_shortname: shortname
+title:            
+description:      Pan's blog
+logo:            
+disqus_shortname:   
+duoshuo_enable:   true
 #Comment out url when working locally to resolve base urls correctly
 url:              
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         your-photo.jpg
-  email:          your@email.com
+  name:           ethansure
+  avatar:         my-photo.jpg
+  email:          ethan.jianxu@email.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   facebook:
@@ -18,7 +19,7 @@ owner:
   instagram:
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    "http://plus.google.com/123123123123132123"
+  google_plus:    
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
@@ -29,16 +30,20 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
+  - title: Home
+    url: /
   - title: About
     url: /about
-  - title: Articles
-    url: /articles
-  - title: Google
-    url: http://google.com
+  - title: archives
+    url: /archives   
+  - title: Tags  
+    url: /tags
+  - title: weibo
+    url: http://weibo.com/surep
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Shanghai
 pygments:    true
 markdown:    kramdown
 
