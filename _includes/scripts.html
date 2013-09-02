@@ -17,5 +17,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-{% endif %}
+{% endif %}     
+{% include back_to_top.html %}
 {% if site.disqus_shortname and page.comments %}{% include disqus_comments.html %}{% endif %}
+{% if site.duoshuo_enable and page.comments %}{% include duoshuo_comments.html %}{% endif %}

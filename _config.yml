@@ -1,9 +1,10 @@
 title:            
 description:      Pan's blog
-logo:             site-logo.png
-disqus_shortname: 
+logo:            
+disqus_shortname:   
+duoshuo_enable:   true
 #Comment out url when working locally to resolve base urls correctly
-url:              http://ethanpan.github.io
+url:              
 
 # Owner/author information
 owner:
@@ -29,10 +30,14 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
+  - title: Home
+    url: /
   - title: About
     url: /about
   - title: archives
-    url: /archives
+    url: /archives   
+  - title: Tags  
+    url: /tags
   - title: weibo
     url: http://weibo.com/surep
     external: true

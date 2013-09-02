@@ -9,7 +9,7 @@ image:
   creditlink: http://ethanpan.github.io
 ---
  
-我是谁不重要，照片为我代言。
+
 
 要么旅行，要么读书，身体和心灵必须有一个在路上。
 

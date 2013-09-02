@@ -851,5 +851,6 @@ var navigation = responsiveNav("#site-nav", { // Selector: The ID of the wrapper
 
 // FitVids options
 $(function() {
-	$("article").fitVids();
-});
+	$("article").fitVids();  
+	
+});                   
