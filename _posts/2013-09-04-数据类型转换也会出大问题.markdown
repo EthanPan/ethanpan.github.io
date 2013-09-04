@@ -8,12 +8,14 @@ comments: true
 
 --- 
 #迷惑  
-{% highlight java %} 
+{% highlight java %}
+ 
 	public class Multicast {
 		public static void main(String[] args){
 			System.out.println(2.00-1.10);
 		}
-	} 
+	}   
+	
 {% endhighlight %} 
 如果你很傻很天真的认为系统会打印"0.9"，那你就面壁去吧。结果是0.8999999999999999。在此推荐JAVA解惑这本书，非常有趣，虽然实用价值毕竟比不上什么实战书籍，但是我感觉书给我带来的求知欲和乐趣是巨大的,这玩意就是我从上面拿下来的，但是我个人认为书中并没有讲得很清楚，或者是本人智商太低，所以我上网查了查，总算明白是为什么了。
 
@@ -36,7 +38,8 @@ comments: true
 ##另一个实验
 在这个实验是我在网上看到的,我把它翻译了下 [源地址](http://coding.derkeiler.com/Archive/Java/comp.lang.java.programmer/2007-01/msg00453.html)
 
-{% highlight java %}
+{% highlight java%} 
+
 	public class Test
 	{
 		public static void
@@ -45,7 +48,8 @@ comments: true
 			System.out.println(0.1D);
 			System.out.println(2.1D - 2.0D);
 		}
-	}  
+	}              
+	
 {% endhighlight %} 
 
 输出结果为
