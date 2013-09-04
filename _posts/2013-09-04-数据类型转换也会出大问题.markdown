@@ -35,7 +35,7 @@ public class Multicast {
 这样我们可以看到0.1在化为二进制的过程中，所取的部分会超过52bit，但是由于规范和计算机的限制，所以只能截取部分。我们知道计算机内的所有运算最后都会换算成加分，所以对于不精确的0.1表达，则会造成这样的后果，这并不是java的问题，是计算机和规范造成的。
 
 ##另一个实验
-在这个实验是我在网上看到的,我把它翻译了下 <a href="http://coding.derkeiler.com/Archive/Java/comp.lang.java.programmer/2007-01/msg00453.html">源地址</a>
+在这个实验是我在网上看到的,我把它翻译了下 [源地址](http://coding.derkeiler.com/Archive/Java/comp.lang.java.programmer/2007-01/msg00453.html)
 
 {% highlight java %}
 public class Test
@@ -70,7 +70,7 @@ public class Test
 而0.1 最接近 0.1000000000000000055511151231257827021181583404541015625
 注: double的精确位为15，1位为近似位                                                             
 
-另外推荐大家看 <a href="http://www.cnblogs.com/FlyingBread/archive/2009/02/15/660206.html"> 浮点数的表示和基本运算 </a>    
+另外推荐大家看 [浮点数的表示和基本运算](http://www.cnblogs.com/FlyingBread/archive/2009/02/15/660206.html)  
 
 
 
