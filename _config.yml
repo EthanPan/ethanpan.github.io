@@ -51,10 +51,9 @@ markdown:    kramdown
 permalink:   /:categories/:title
 
 
-
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true          
+# 
+# markdown: redcarpet
+# pygments: true          
 safe: true
 lsi: false      
 
