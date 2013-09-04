@@ -9,7 +9,6 @@ comments: true
 --- 
 #迷惑  
 {% highlight java %} 
-
 	public class Multicast {
 		public static void main(String[] args){
 			System.out.println(2.00-1.10);
