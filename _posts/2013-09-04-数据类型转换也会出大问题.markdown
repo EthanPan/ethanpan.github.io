@@ -37,7 +37,7 @@ public class Multicast {
 ##另一个实验
 在这个实验是我在网上看到的,我把它翻译了下 [源地址](http://coding.derkeiler.com/Archive/Java/comp.lang.java.programmer/2007-01/msg00453.html)
 
-{% highlight java %}
+
 public class Test
 {
 	public static void
@@ -47,7 +47,7 @@ public class Test
 		System.out.println(2.1D - 2.0D);
 	}
 }  
-{% endhighlight %} 
+
 
 输出结果为
 0.1
@@ -66,8 +66,11 @@ public class Test
 0.1000000000000000055511151231257827021181583404541015625  
 
 查查JAVA api，double转化为string是从一系列可以表达相同数值的浮点数中选折真实中最短的字符串/流
-所以0.10000000000000009最接近0.100000000000000088817841970012523233890533447265625 
+
+所以  0.10000000000000009  最接近0.100000000000000088817841970012523233890533447265625
+
 而0.1 最接近 0.1000000000000000055511151231257827021181583404541015625
+
 注: double的精确位为15，1位为近似位                                                             
 
 另外推荐大家看 [浮点数的表示和基本运算](http://www.cnblogs.com/FlyingBread/archive/2009/02/15/660206.html)  
