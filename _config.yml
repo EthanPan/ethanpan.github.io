@@ -43,7 +43,7 @@ links:
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Shanghai
+timezone:    America/New_York
 pygments:    true
 markdown:    kramdown
 
