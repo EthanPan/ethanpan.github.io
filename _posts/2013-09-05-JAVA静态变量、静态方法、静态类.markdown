@@ -4,7 +4,7 @@ title:  "JAVA静态变量、静态方法、静态类"
 date:   2013-09-05 21:15:18
 categories: JAVA
 tags: [JAVA,thinking in java]
-duoshuo: true      
+duoshuo: y      
 
 ---   
 JAVA的静态变量，静态方法，静态类

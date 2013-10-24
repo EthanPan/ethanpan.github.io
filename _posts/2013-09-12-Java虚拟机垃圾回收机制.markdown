@@ -4,7 +4,7 @@ title:  "Java虚拟机垃圾回收机制"
 date:   2013-09-12 23:28:18
 categories: JAVA
 tags: [JAVA,thinking in java]
-duoshuo: true      
+duoshuo: y      
 
 ---          
 在介绍Java虚拟机垃圾回收机制之前，先看一个其他系统的回收机制：
