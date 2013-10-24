@@ -1,19 +1,10 @@
 ---
 layout: page
-permalink: /about/index.html
-title: About Me
-tags: [about,ethan]
-image:
-  feature: banner1.jpg
-  credit: Ethan Pan
-  creditlink: http://ethanpan.github.io
+title: About
 ---
- 
 
+Give people something to read and get to know you. Here's my attempt: this is [Mu-An](http://muan.co), a designer developer who lives in London at the moment.
 
-要么旅行，要么读书，身体和心灵必须有一个在路上。
+Tweet at [@muanchiou](http://twitter.com/muanchiou), read my code on [GitHub](http://github.com/muan), see my designs on [Dribbble](http://dribbble.com/muan), find my CV on [LinkedIn](http://uk.linkedin.com/in/muanchiou).
 
-*Or travel, or reading, body and soul always have one on the road.*
-
-[微博](http://www.weibo.com/surep) ｜ [豆瓣](http://www.douban.com/people/3559336/) ｜ [Twitter](https://twitter.com/Ethan_SURE) | [Github](https://github.com/EthanPan)
-
+This theme is made by me. You have a nice day. ♥

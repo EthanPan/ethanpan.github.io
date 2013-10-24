@@ -1,59 +1,25 @@
-title:            
-description:      Pan's blog
-logo:            
-disqus_shortname:   
-duoshuo_enable:   true
-#Comment out url when working locally to resolve base urls correctly
-url:              
+title:            Scribble
+description:      A jekyll theme. Because I scribble.
+url:              # Site url.
+signoff:          # Your name.
+disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
-# Owner/author information
-owner:
-  name:           ethansure
-  avatar:         my-photo.jpg
-  email:          ethan.jianxu@email.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  facebook:
-  github:
-  linkedin:
-  instagram:
-  tumblr:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Links to include in top navigation
-# For external links add external: true
 links:
-  - title: Home
-    url: /
-  - title: About
-    url: /about
-  - title: archives
-    url: /archives   
-  - title: Tags  
-    url: /tags.html
-  - title: weibo
-    url: http://weibo.com/surep
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-pygments:    true
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:year/:month/:day/:title
-
-
-# 
-# markdown: redcarpet
-# pygments: true          
-safe: true
-lsi: false      
-
+  - name:         About
+    url:          /about
+  - name:         Blog
+    url:          http://muan.co
+    external:     true
+  - name:         Email
+    url:          mailto:hello@muan.co
+    external:     true
+  - name:         GitHub
+    url:          http://github.com/muan
+    external:     true
+pygments:         true
+permalink:        pretty
+markdown:         rdiscount
+rdiscount:
+  extensions:     [smart]
