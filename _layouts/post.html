@@ -28,7 +28,9 @@
       {% if page.disqus == 'y' %}
         {% include disqus.html %}
       {% endif %} 
-	 
+	 {% if page.duoshuo == 'y' %}
+        {% include duoshuo_comments.html %}
+      {% endif %}
       {% include links.html %}
     </div>
     {% include footer.html %}
