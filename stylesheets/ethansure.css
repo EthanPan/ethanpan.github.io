@@ -12,6 +12,7 @@ list-style: none;
 .tag-box li {
 float: left;
 margin-right: 15px;
+padding: 0.5em 0;
 }
 .tag-box li a {
 display: block;
