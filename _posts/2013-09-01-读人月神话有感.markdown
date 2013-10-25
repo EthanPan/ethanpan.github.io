@@ -4,7 +4,6 @@ title:  "读《人月神话》有感"
 date:   2013-09-01 21:36:49
 categories: 软件工程
 tags: [软件工程]
-
 disqus: y      
 
 ---

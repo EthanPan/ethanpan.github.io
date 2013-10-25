@@ -2,7 +2,7 @@ title:            PAN
 description:      
 url:              #ethansure.me
 signoff:          # Your name.
-disqus_shortname: ethansure# disqus comment thread for post header options. ( leave blank if unwanted. )
+disqus_shortname: ethansure
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
