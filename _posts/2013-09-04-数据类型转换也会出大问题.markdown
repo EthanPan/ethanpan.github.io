@@ -4,7 +4,7 @@ title:  "数据类型转换也会出大问题"
 date:   2013-09-04 22:59:49
 categories: JAVA
 tags: [JAVA,java puzzlers]
-duoshuo: y      
+disqus: y      
 
 --- 
 #迷惑  
