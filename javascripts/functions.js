@@ -16,4 +16,8 @@ function goTop(obj){
 	});
 
 
-};
+};                       
+
+$(function(){
+   goTop('#go-top');
+});
