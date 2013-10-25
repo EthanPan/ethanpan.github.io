@@ -164,11 +164,6 @@ ul.posts span {
 /* Tags
 /*
 /*****************************************************************************/
-.tag-box {
-overflow: hidden;
-margin-bottom: 20px;
-list-style: none;
-}
 ul {
 display: block;
 list-style-type: disc;
@@ -177,5 +172,33 @@ list-style-type: disc;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 -webkit-padding-start: 40px;
+}
+
+.tag-box {
+overflow: hidden;
+margin-bottom: 20px;
+list-style: none;
+}
+.tag-box li {
+float: left;
+margin-right: 15px;
+}
+.tag-box li a {
+display: block;
+background: #fefefe;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 2px 7px;
+position: relative;
+}
+.tag-box li span {
+position: absolute;
+color: #fff;
+background: #FE6600;
+display: block;
+padding: 0 5px;
+border-radius: 10px;
+right: -13px;
+top: -5px;
 }
 
