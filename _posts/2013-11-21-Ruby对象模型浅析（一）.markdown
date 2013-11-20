@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java虚拟机垃圾回收机制"
+title:  "Ruby对象模型浅析（一）"
 date:   2013-11-21 02:24:18
 categories: Ruby
 tags: [metaprogramming ruby,ruby]
