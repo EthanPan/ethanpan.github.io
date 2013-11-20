@@ -26,7 +26,9 @@ disqus: y
 		end 
 {% endhighlight %}
 		
-    该方法是对字符串的处理，只保留字母数字和空格，根据面向对象的思想将其放入到String类中，ruby是支持这种做法的，我们可以称之为 `打开类`技术。
+    
+该方法是对字符串的处理，只保留字母数字和空格，根据面向对象的思想将其放入到String类中，ruby是支持这种做法的，我们可以称之为 `打开类`技术。
+
 2. 类定义
 
 	为什么会出现打开类这样的方法操作，需要了解ruby类的定义，若用户重复定义两个类，实际只定义了一个，若第二次定义中的方法有变动，则打开第一次定义的类，将方法更新进去。例如：
@@ -45,7 +47,9 @@ disqus: y
 		obj.y # => "y"
 		
  {% endhighlight %}		
-    从上面的实验中可以看到，D类只定义了一次，同时具有了x和y方法。这样的实验可以用其它Gem（实现一些功能的ruby程序包）来做，如Money gem, 可以有Numeric.to_money()的方法。
+    
+从上面的实验中可以看到，D类只定义了一次，同时具有了x和y方法。这样的实验可以用其它Gem（实现一些功能的ruby程序包）来做，如Money gem, 可以有Numeric.to_money()的方法。
+
 3. 问题
 	
 	重复定义某些方法，导致程序产生bug，称为`猴子补丁`
@@ -54,7 +58,8 @@ disqus: y
 	
  	
 ---
-###类真相(对象、类、及常量)
+###类真相(对象、类、及常量)     
+
   {% highlight ruby %} 
 	class MyClass
 		def my_method
@@ -63,13 +68,15 @@ disqus: y
 	end
 	{% endhighlight %}
 	
-上述是自己定义的类，我们可以从Myclass.methods 中看到my_method方法和instance_variables方法，前者是返回MyClass的所以方法，后者是返回MyClass的实例变量。当我们生成一个新的对象的时候，对象里面有什么呢？
+上述是自己定义的类，我们可以从Myclass.methods 中看到my_method方法和instance_variables方法，前者是返回MyClass的所以方法，后者是返回MyClass的实例变量。当我们生成一个新的对象的时候，对象里面有什么呢？   
+
    {% highlight ruby %} 
 	obj.my_method
 	obj.instance_variables # => [:@v]
  	{% endhighlight %}
+                                                           
 
 一般会认为对象里面会存放方法和实例变量，但是实际上`对象只存放了实例变量和一个自身类的引用，方法存放在类中`。如下图：
-
+                                                      
 ![AD](https://dl.dropboxusercontent.com/u/71643374/%E7%AC%94%E8%AE%B0%E6%8F%92%E5%9B%BE/ruby%E5%85%83%E7%BC%96%E7%A8%8B/%E5%AF%B9%E8%B1%A1%E3%80%81%E7%B1%BB%E3%80%81%E6%96%B9%E6%B3%95%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%8F%98%E9%87%8F%E7%9A%84%E5%85%B3%E7%B3%BB.png)
 
