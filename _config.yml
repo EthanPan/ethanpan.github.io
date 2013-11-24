@@ -1,13 +1,12 @@
-  title:            PAN
-  url:              http://ethansure.me
-  permalink:        pretty
-  pygments:         true
-  markdown:         rdiscount
-  rdiscount:
-    extensions:     [smart]
-  google_analytics: UA-45163660-1
-  timezone:         Europe/London
-  paginate: 5
-  links: 
-    - name:         About
-      url:          /about
+title:            PAN
+url:              http://ethansure.me
+permalink:        pretty
+pygments:         true
+markdown:         rdiscount
+rdiscount:
+  extensions:     [smart]
+google_analytics: UA-45163660-1
+paginate: 5
+links: 
+  - name:         About
+    url:          /about
