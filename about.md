@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Just an ordinary about page
+title: About me
 ---
-要么旅行，要么读书，身体和心灵必须有一个在路上。
+要么旅行，要么读书，身体和心灵必须有一个在路上。  
+
 *Or travel, or reading, body and soul always have one on the road.*
   
 
