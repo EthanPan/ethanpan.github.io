@@ -1,4 +1,12 @@
-<header>
-<a id="go-back-home" href="/"><img src="/images/scribble.png" alt="scribble" width="53" height="59"></a>
-<p>{{ site.title }}</p>   
+<header class="site-header">
+  <a href="/" class="site-title">
+    <div class="block"></div>
+    <span class="firstname">Mu-An</span><span class="lastname">Chiou</strong>
+  </a>
+  <nav>
+    {% for link in site.links %}
+      <a id="ind-{{ link.name | downcase }}" href="{{ link.url }}">{{ link.name }}</a>
+    {% endfor %}
+  </nav>
 </header>
+<a id="fork-me" class="fork-me" href="https://github.com/muan/muan.github.com"><img src="/images/fmog.png" alt="Fork me on GitHub"></a>

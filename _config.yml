@@ -1,24 +1,13 @@
-title:            PAN
-description:      
-url:              #ethansure.me
-signoff:          # Your name.
-disqus_shortname: ethansure
-facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
-google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
-
-links:             
-  - name:         Tags
-    url:          /tags.html
-  - name:         About
-    url:          /about
-  - name:         Email
-    url:          mailto:ethan.jianxu@gmail.com
-    external:     true
-  - name:         GitHub
-    url:          http://github.com/ethanpan
-    external:     true
-pygments:         true
-permalink:        pretty
-markdown:         rdiscount
-rdiscount:
-  extensions:     [smart]
+  title:            PAN
+  url:              http://ethansure.me
+  permalink:        pretty
+  pygments:         true
+  markdown:         rdiscount
+  rdiscount:
+    extensions:     [smart]
+  google_analytics: UA-45163660-1
+  timezone:         Europe/London
+  paginate: 5
+  links: 
+    - name:         About
+      url:          /about
