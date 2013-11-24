@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Ruby对象模型浅析（二）"
+date:   2013-11-24 23:21:10
+categories: Ruby
+tags: [metaprogramming ruby,ruby]
+disqus: y      
+
+###重访类
+上一篇文章谈到，对象的方法是存在于自身类当中的，那这里又有一个新的概念就是`类自身也是对象`。
+
+{% highlight ruby %}  
+	"hello".calss # => String
+	"String".clss # => Class
+{% endhighlight %} 
+
+那和任何对象一样，类也是有方法的。回到上一篇我们提到的obj对象中的my_method的方法，它存放于MyClass中，为了消除二义性，我们称my_method为MyClass的`实例方法`，而非方法。结合类自身是对象，类的类为Class，这意味着存放一个类的方法，就是Class的实例方法:  
+
+{% highlight ruby %}  
+	interited = false   //不包含父类
+	Class.instance_methods(interited) # => [:allocate, :new, :superclass]
+{% endhighlight %}               
+
+其中的superclass方法返回的是一个类的超类（父类）。
+
+{% highlight ruby %}
+	String.superclass # => Object
+	Object.superclass # => BaseObject
+	BasicObject.superclass # => nilpotent
+{% endhighlight %}         
+
+所有类最终都继承于Object，Object又继承与BaseObject，BasicObject是Ruby对象体系中的根节点。另外一个类不过是增强了的Module，增加了三个方法:new(),allocate()和superclass()。下图清晰的表示了上述关系：
+
+![重访类](https://dl.dropboxusercontent.com/u/71643374/%E7%AC%94%E8%AE%B0%E6%8F%92%E5%9B%BE/ruby%E5%85%83%E7%BC%96%E7%A8%8B/%E9%87%8D%E8%AE%BF%E7%B1%BB.png)
