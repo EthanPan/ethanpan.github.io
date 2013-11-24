@@ -2,20 +2,8 @@
 layout: post
 title: Just an ordinary about page
 ---
+要么旅行，要么读书，身体和心灵必须有一个在路上。
+*Or travel, or reading, body and soul always have one on the road.*
+  
 
-**Mu-An Chiou** <small>(**邱慕安**)</small>. 
-
-I am a designer at [GitHub](https://github.com) and co-founder of [Zeczec](http://zeczec.com). 
-
-I am a **Taiwanese** from Taipei, have been in the UK for the past 5 years, currently based in **London**.
-
-I started (trying) to do what I do now when I was 11, got into **French** in university but quickly dropped out, studied **Product Design** later instead, then went back doing web after graduated. 
-
-I like web much more, because on the internet you **see the result much quicker**, and I don't have patience. You can find some of my product design works [here](http://be.net/muan).
-
-For my fellow internet dwellers, I'm on 
-[Twitter](https://twitter.com/muanchiou),
-[GitHub](https://github.com/muan),
-[Dribbble](http://dribbble.com/muan), and
-[Instagram](http://instagram.com/muanchiou).
-There's a [XML Feed](/feed.xml) for my posts, and [this site is opensource](https://github.com/muan/muan.github.com) on GitHub.
+[微博](http://www.weibo.com/surep) ｜ [豆瓣](http://www.douban.com/people/3559336/) ｜ [Twitter](https://twitter.com/Ethan_SURE)  |  [Github](https://github.com/EthanPan)
