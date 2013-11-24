@@ -19,7 +19,7 @@ disqus: y
 ### 打开类
 用户可自定义方法加入到现有类当中，例如：
 
- {% highlight ruby %}     
+{% highlight ruby %}     
 		class String
 			def to_alphanumeric
 				gsub /[^\w\s]/,’ ‘
