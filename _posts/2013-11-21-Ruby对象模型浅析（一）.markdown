@@ -1,0 +1,79 @@
+---
+layout: post
+title:  "Ruby对象模型浅析（一）"
+date:   2013-11-21 02:24:18
+categories: Ruby
+tags: [metaprogramming ruby,ruby]
+disqus: y      
+
+---
+很早就听闻Rails的强大，一直没有机会学习和实践，直到去年软件工程课程的项目，当时做的是一个作业小教务系统，由于时间关系，我和团队成员大部分的精力放在了研究如何用Rails去实现某些功能，却没能打好Ruby的基础，所以没能好好体会Ruby这门优美的语言，那时候我处于一种迷糊状态，感觉这Ruby语言是很好用，但是说不上来为什么，所以一直想好好研究下Ruby的内核，或者说是设计原理。这学期以来终于找到一些可用的时间，找了几本书，开始Ruby慢慢的重新学习之路。
+
+首先感谢《Ruby 元编程》的作者Paolo Perrotta，给我们带来如此好的书，书中对Ruby内部结构和机制可谓描述得简单生动，每读完一章都让我感叹ruby语言的精妙，忍不住继续读下去。还要感谢书的译者，翻译得不错。那现在我主要是使用这本书，有些语法细节上的问题会去查《Ruby编程语言》这本书，这两本书配合起来已经完全够用。准备这两本书研究透彻之后再去看看Ruby程序之父的《松本行弘的程序世界》再反过来去考究ruby的思想。
+
+在最近一些相关的文章中，我主要是把自己的笔记放上来，大部分是从书中理解，例子基本上书上的，我认为已经足够经典。每一章先做一个基础的梳理，然后再做一些拓展性的探究。
+
+那今天我们先初探ruby的神奇世界。不同的编程语言有着自己的设计方法，但是目前大部分人接触的都是c或者是c++，java面向对象编程语言这样的语言，虽然它们之间有区别，但是一些语法层面还是相互参照，但是ruby会有较大的不同，那就先从ruby打开类的技术说起。
+
+
+### 打开类
+用户可自定义方法加入到现有类当中，例如：
+
+{% highlight ruby %}     
+		class String
+			def to_alphanumeric
+				gsub /[^\w\s]/,’ ‘
+			end
+		end 
+{% endhighlight %}
+   
+该方法是对字符串的处理，只保留字母数字和空格，根据面向对象的思想将其放入到String类中，ruby是支持这种做法的，我们可以称之为 `打开类`技术。    
+
+####类定义  
+为什么会出现打开类这样的方法操作，需要了解ruby类的定义，若用户重复定义两个类，实际只定义了一个，若第二次定义中的方法有变动，则打开第一次定义的类，将方法更新进去。例如：
+   {% highlight ruby %}   
+		class D
+			def x; 'x'; end   //ruby若在同一行表示不同行代码则用';'分割
+		end
+		
+		class D
+			def y; 'y; end
+		end
+		
+		
+		obj = D.new
+		obj.x # => "x"
+		obj.y # => "y"
+		
+ {% endhighlight %}		 
+从上面的实验中可以看到，D类只定义了一次，同时具有了x和y方法。这样的实验可以用其它Gem（实现一些功能的ruby程序包）来做，如Money gem, 可以有Numeric.to_money()的方法。 
+
+#### 问题         
+重复定义某些方法，导致程序产生bug，称为`猴子补丁`
+	
+		
+	
+ 	
+---
+###类真相(对象、类、及常量)     
+
+  {% highlight ruby %} 
+	class MyClass
+		def my_method
+			@v = 1
+		end
+	end
+	{% endhighlight %}
+	
+上述是自己定义的类，我们可以从Myclass.methods 中看到my_method方法和instance_variables方法，前者是返回MyClass的所以方法，后者是返回MyClass的实例变量。当我们生成一个新的对象的时候，对象里面有什么呢？   
+
+   {% highlight ruby %} 
+	obj.my_method
+	obj.instance_variables # => [:@v]
+ 	{% endhighlight %}
+                                                           
+
+一般会认为对象里面会存放方法和实例变量，但是实际上`对象只存放了实例变量和一个自身类的引用，方法存放在类中`。如下图：
+                                                      
+![AD](https://dl.dropboxusercontent.com/u/71643374/%E7%AC%94%E8%AE%B0%E6%8F%92%E5%9B%BE/ruby%E5%85%83%E7%BC%96%E7%A8%8B/%E5%AF%B9%E8%B1%A1%E3%80%81%E7%B1%BB%E3%80%81%E6%96%B9%E6%B3%95%E5%92%8C%E5%AE%9E%E4%BE%8B%E5%8F%98%E9%87%8F%E7%9A%84%E5%85%B3%E7%B3%BB.png)
+
