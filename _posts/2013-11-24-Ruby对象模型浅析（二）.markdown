@@ -5,6 +5,7 @@ date:   2013-11-24 23:21:10
 categories: Ruby
 tags: [metaprogramming ruby,ruby]
 disqus: y      
+--- 
 
 ###重访类
 上一篇文章谈到，对象的方法是存在于自身类当中的，那这里又有一个新的概念就是`类自身也是对象`。
