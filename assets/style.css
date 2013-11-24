@@ -15,8 +15,8 @@ b, strong, h1, h2, h3, h4, h5 {
 
 hr {
   border: 0;
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  
   margin: 20px 0;
   height: 6px; }
 
