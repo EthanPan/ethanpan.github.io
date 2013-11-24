@@ -11,10 +11,10 @@ disqus: y
 ###重访类
 上一篇文章谈到，对象的方法是存在于自身类当中的，那这里又有一个新的概念就是`类自身也是对象`。
 
-{% highlight ruby %}  
-"hello".calss # => String
-String.clss # => Class
-{% endhighlight %} 
+	{% highlight ruby %}  
+	"hello".calss # => String
+	String.clss # => Class
+	{% endhighlight %} 
 
 那和任何对象一样，类也是有方法的。回到上一篇我们提到的obj对象中的my_method的方法，它存放于MyClass中，为了消除二义性，我们称my_method为MyClass的`实例方法`，而非方法。结合类自身是对象，类的类为Class，这意味着存放一个类的方法，就是Class的实例方法:  
 
