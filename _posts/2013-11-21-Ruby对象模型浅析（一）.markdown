@@ -37,7 +37,7 @@ disqus: y
 		end
 		
 		class D
-			def y; 'y; end
+			def y; 'y'; end
 		end
 		
 		
