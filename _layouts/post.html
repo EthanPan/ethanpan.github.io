@@ -20,7 +20,10 @@
             </header>
             {{ content }}
             {% unless page.url == "/about/" %}{% include signoff.html %}{% endunless %}
-          </article>
+          </article>           
+			{% if page.disqus == 'y' %}
+		        {% include disqus.html %}
+		      {% endif %}
           {% if page.previous or page.next %}
           <div class="pagination">
             {% if page.previous %}
@@ -42,9 +45,7 @@
           </div>
           {% endif %}
         </section>
-      {% if page.disqus == 'y' %}
-        {% include disqus.html %}
-      {% endif %}
+   
       {% include footer.html %}
     </div>
   </body>
