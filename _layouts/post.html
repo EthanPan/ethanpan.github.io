@@ -31,9 +31,8 @@
               <div class="tip">Use ← and → to navigate between posts.</div>
               <a href="{{ page.previous.url }}" id="js-previous-post">
                 <span class="small-title">Previous Post</span>
-                <span>
-					<h4>{{ page.previous.title }}</h4>
-                	<span class="small upcase datetime muted">{{ page.previous.date | date_to_string }}</span>       </span>
+                <h4>{{ page.previous.title }}</h4>
+                <span class="small upcase datetime muted">{{ page.previous.date | date_to_string }}</span>
               </a>
             {% endif %}
             {% if page.next %}
