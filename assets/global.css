@@ -102,17 +102,25 @@ a {
 
 code {
   white-space: nowrap;
-  color: #000; }
+  color: #000; 
+   word-break: break-all;
+word-wrap: break-word
+}
 
 pre code {
   white-space: pre;
   background: transparent;
   border: 0;
-  padding: 0; }
+  padding: 0; 
+word-break: break-all;
+word-wrap: break-word}
 
 pre, code {
   background-color: #F8F8FF;
   border: 1px solid #DDDDDD;
   font-size: 13px;
   padding: 3px 5px;
-  border-radius: 3px; }
+  border-radius: 3px; 
+word-break: break-all;
+word-wrap: break-word}
+
