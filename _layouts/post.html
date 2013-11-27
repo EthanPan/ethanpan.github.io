@@ -20,7 +20,7 @@
             </header>
             {{ content }}
             {% unless page.url == "/about/" %}{% include signoff.html %}{% endunless %}
-                     
+            <hr>        
 			{% if page.disqus == 'y' %}
 		        {% include disqus.html %}
 		      {% endif %}        
