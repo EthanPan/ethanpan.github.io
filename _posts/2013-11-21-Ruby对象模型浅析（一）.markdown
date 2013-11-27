@@ -22,7 +22,7 @@ disqus: y
 {% highlight ruby %}     
 		class String
 			def to_alphanumeric
-				gsub /[^\w\s]/,’ ‘
+				gsub /[^\w\s]/,''
 			end
 		end 
 {% endhighlight %}
@@ -33,7 +33,7 @@ disqus: y
 为什么会出现打开类这样的方法操作，需要了解ruby类的定义，若用户重复定义两个类，实际只定义了一个，若第二次定义中的方法有变动，则打开第一次定义的类，将方法更新进去。例如：
    {% highlight ruby %}   
 		class D
-			def x; 'x'; end   //ruby若在同一行表示不同行代码则用;分割
+			def x; 'x'; end   # ruby若在同一行表示不同行代码则用;分割
 		end
 		
 		class D

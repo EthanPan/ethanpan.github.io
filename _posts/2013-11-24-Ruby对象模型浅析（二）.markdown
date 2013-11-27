@@ -19,7 +19,7 @@ disqus: y
 那和任何对象一样，类也是有方法的。回到上一篇我们提到的obj对象中的my_method的方法，它存放于MyClass中，为了消除二义性，我们称my_method为MyClass的**实例方法**，而非方法。结合类自身是对象，类的类为Class，这意味着存放一个类的方法，就是Class的实例方法:  
 
 {% highlight ruby %}
-interited = false   //不包含父类
+interited = false   #不包含父类
 Class.instance_methods(interited) # => [:allocate, :new, :superclass]
 {% endhighlight %}               
 
