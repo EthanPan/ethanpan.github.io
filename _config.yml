@@ -8,5 +8,7 @@ rdiscount:
 google_analytics: UA-45163660-1
 paginate: 5
 links: 
-  - name:         About
+  - name:         关于
     url:          /about
+  - name:         一悟
+  	url:          /one
